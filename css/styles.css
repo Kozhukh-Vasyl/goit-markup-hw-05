@@ -13,7 +13,7 @@
 
 :root {
   --primary-background-color: #ffffff;
-  --second-backgraund-color: #f5f4fa;
+  --second-background-color: #f5f4fa;
   --accent-bgc: #2f303a;
   --primary-text: #757575;
   --second-text-color: #212121;
@@ -86,8 +86,6 @@ body {
 
 /* === HEADER === */
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--header-linr);
@@ -169,7 +167,7 @@ body {
 .header-m-link:hover,
 .header-m-link:focus {
   color: var(--accent-text-color);
-  transition: 0.3s;
+  transition: var(--trans);
 }
 
 .header-m-link,
@@ -263,7 +261,7 @@ body {
 
 .advantage-item-icon {
   height: 120px;
-  background-color: var(--second-backgraund-color);
+  background-color: var(--second-background-color);
   border-radius: 4px;
   display: block;
   margin-bottom: 30px;
@@ -331,7 +329,7 @@ body {
 
 /* -------------TEAM--------------- */
 .team {
-  background: var(--second-backgraund-color);
+  background: var(--second-background-color);
 }
 
 .team-item {
@@ -472,13 +470,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
-  background: var(--second-backgraund-color);
+  background: var(--second-background-color);
   border-radius: 4px;
   border: 4px solid transparent;
   min-width: 73px;
   padding: 6px 22px;
   display: block;
-  transition-property: color, backgraund-color, box-shadow;
+  transition-property: color, background-color, box-shadow;
   transition-duration: var(--trans-time);
   transition-timing-function: var(--tnas-funct);
 }
@@ -700,6 +698,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--link-color);
+  transition: var(--trans);
 }
 
 .footer-t-link:hover,
@@ -743,7 +742,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition-property: backgraund-color;
+  transition-property: background-color;
   transition-duration: var(--trans-time);
   transition-timing-function: var(--tnas-funct);
 }
